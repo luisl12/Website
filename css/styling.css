@@ -1,0 +1,512 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding:0;
+    margin:0;
+    background-color:#f4f4f4;
+}
+
+/* hamburger  */
+svg {
+    display: none;
+}
+
+#menu_icon{
+    display: none;
+}
+
+#drawer{
+    display: none;
+}
+
+#drawer.open {
+    display: none;
+}
+
+
+/* global */
+.container{
+    width: 90%;
+    margin:auto;
+    overflow: hidden;
+}
+
+ul{
+    margin:0;
+    padding: 0;
+}
+
+.button_1{
+    height:38px;
+    background:#e8491d;
+    border:0;
+    padding-left: 20px;
+    padding-right:20px;
+    color:#ffffff;
+}
+
+.dark{
+    padding:15px;
+    background:#35424a;
+    color:#ffffff;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+/* header */
+
+header{
+    background-color: #35424a;
+    color: #ffffff;
+    padding-top: 20px;
+    min-height: 90px;
+    border-bottom: #e8491d 3px solid;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float:left;
+    display: inline;
+    padding: 0 10px 0 10px
+}
+
+header #title{
+    float: left;
+}
+
+header #title h1{
+    margin:0;
+}
+
+header nav{
+    float:right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color:#e8491d;
+    font-weight:bold;
+}
+
+/* dropdown menu */
+
+a{
+    text-decoration: none;
+}
+
+nav ul{
+    position: relative;
+    display: inline-block;
+}
+
+nav ul ul{
+    display: none;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    transition: all .25s ease;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: #e8491d;
+}
+
+nav ul li:hover > ul{
+    display: block;
+}
+
+nav ul li:hover > ul{
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul li:hover > ul li{
+    float: none;
+    display: block;
+}
+
+nav ul li:hover > ul li a {
+    color: white;
+    min-width: 500px;
+}
+
+nav ul li:hover > ul li a:hover{ color: #e8491d}
+
+nav ul li{position: relative}
+
+nav ul li ul{position: absolute; top:15px; left:15px;}
+
+/* Slide */
+#slide{
+    min-height:400px;
+    text-align:center;
+    color:#ffffff;
+    /*background: url('../imgs/background2.jpg') no-repeat 0 -100px;*/
+}
+
+
+
+#slide h1{
+    margin-top:100px;
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+#slide p{
+    font-size:20px;
+}
+
+/* a partir daqui */
+
+.mySlides {
+    display:none;
+}
+
+
+/* Caption text */
+.mySlides figcaption {
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    padding: 8px 12px;
+    bottom: 10%;
+    width: 100%;
+    left:30%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dotpoints {
+    text-align: center;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* bar*/
+#bar{
+    padding:15px;
+    color:#ffffff;
+    background:#35424a;
+}
+
+#bar h1{
+    float:left;
+    margin-top:15px;
+}
+
+#bar form {
+    float:right;
+    margin-top:15px;
+}
+
+#bar input[type="email"]{
+    padding:4px;
+    height:25px;
+    width:250px;
+}
+
+
+/* Imagens e legendas*/
+
+#topicos{
+    margin-top: 20px;
+}
+
+#topicos figure{
+    float: left; /* meter imagens e legenda na horizontal (inherit - mete vertical)*/
+    text-align: center; /*legenda centrada*/
+    width:30%;
+    padding:10px;
+}
+
+/* portfolio */
+.magic_tricks{
+    margin-top: 20px;
+}
+
+.magic_tricks figure{
+    margin-top: 20px;
+    float: left; /* meter imagens e legenda na horizontal (inherit - mete vertical)*/
+    text-align: center; /*legenda centrada*/
+    padding:10px;
+}
+
+
+/* contact */
+
+#contacts{
+    margin-top: 30px;
+}
+
+aside#sidepic{
+    float: left;
+    width: 30%;
+    margin-top: 50px;
+}
+
+article#texto-info{
+    float:right;
+    width: 30%;
+    height: 80%;
+    margin-top: 40px;
+}
+
+#texto-info p{
+    padding: 5.2px;
+}
+
+
+/* footer */
+footer{
+    padding:20px;
+    margin-top:20px;
+    color:#ffffff;
+    background-color:#e8491d;
+    text-align: center;
+}
+
+/* Media Queries */
+
+/* Qd chega a 414px muda (formato smartphone) */
+@media(min-width: 320px) and (max-width: 767px){
+
+    /* mete o titulo no centro e a lista tambem */
+    header #title,
+    header nav,
+    header nav li,
+    #bar h1,
+    #bar form,
+    #topicos,
+    aside#sidepic,
+    article#texto-info{
+        float:none;
+        text-align:center;
+        width:100%;
+    }
+
+    /* hamburger */
+    svg {
+        display: block;
+        width: 60px;
+    }
+
+    #menu_icon{
+        display: block;
+        cursor: pointer;
+        padding: 0px;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        z-index: 1000;
+    }
+
+    #drawer{
+        display: block;
+        background-color: #CCCCCC;
+        height:100%;
+        width: 60%;
+        position: absolute;
+        transition: all 0.2s linear;
+        transform: translateX(-115%);
+        top: 0px;
+        border-radius: 10px;
+        opacity:0.95;
+    }
+
+    #drawer.open {
+        display: block;
+        transform: translateX(0);
+    }
+
+    nav a:link, nav a:visited {
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+        margin: 5px;
+        color: white;
+    }
+
+    nav {
+        display:block;
+        height: auto;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+
+    /*header{
+        padding-bottom:20px;
+    }
+
+    header nav li a{
+        font-size: 13.5px;
+    }*/
+
+    #slide h1{
+        margin-top:40px;
+    }
+
+    /* botao para ficar em baixo da barra de escrita*/
+    #bar button, .quote button{
+        display:block;
+        width:100%;
+    }
+
+    #bar form input[type="email"], .quote input, .quote textarea{
+        width:100%;
+        margin-bottom:5px;
+    }
+
+    #topicos{
+        margin-top: 20px;
+    }
+
+    #topicos figure{
+        float: left; /* meter imagens e legenda na horizontal (inherit - mete vertical)*/
+        text-align: center; /*legenda centrada*/
+        padding-top: 20px;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* portfolio */
+    .magic_tricks{
+        margin-top: 20px;
+    }
+
+    .magic_tricks figure{
+        float: left; /* meter imagens e legenda na horizontal (inherit - mete vertical)*/
+        text-align: center; /*legenda centrada*/
+        padding-top: 20px;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* contacts pic */
+    #sidepic img{
+        width: 100%;
+    }
+}
+
+/*  (formato tablet) */
+@media(min-width: 768px) and (max-width: 1024px){
+
+    *{
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+    #drawer{
+        display: block;
+    }
+
+    header nav li a{
+        font-size: 20px;
+    }
+
+    #title h1{
+        font-size: 35px;
+    }
+
+    #slide h1{
+        margin-top:40px;
+    }
+
+    #topicos{
+        margin-top: 60px;
+    }
+
+    #topicos figure{
+        float: left; /* meter imagens e legenda na horizontal (inherit - mete vertical)*/
+        text-align: center; /*legenda centrada*/
+        width:30%;
+        padding: 10px;
+        box-sizing: content-box;
+    }
+
+    .magic_tricks figcaption{
+        width: 200px;
+        padding: 10px;
+    }
+
+    footer{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        color:#ffffff;
+        background-color:#e8491d;
+        text-align: center;
+    }
+
+    article#texto-info{
+        float:left;
+        text-align:left;
+        width:50%;
+        padding-left: 20%;
+    }
+
+
+}
+
+@media(min-width: 1025px) {
+
+    #drawer{
+        display: block;
+    }
+
+}

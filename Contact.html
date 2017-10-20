@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/styling_ab_cont.css">
+</head>
+<body>
+<header>
+
+    <a id="menu_icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="white"/>
+        </svg>
+    </a>
+
+    <div id="title">
+        <h1>Theory<span class="highlight">182</span></h1>
+    </div>
+
+    <div id="drawer">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a>Porfolio</a>
+                    <ul>
+                        <li><a href="portfolio.html">Tricks</a></li>
+                        <li><a href="portfolio.html">Cards</a></li>
+                        <li><a href="portfolio.html">Magicians</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li class="current"><a>Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+    let menu_icon = document.querySelector('#menu_icon');
+    let container = document.querySelector("body");
+    let drawer = document.querySelector('#drawer');
+
+    menu_icon.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+    });
+    container.addEventListener('click', function() {
+        drawer.classList.remove('open');
+    });
+
+</script>
+
+<section id = "bar">
+    <div class="container">
+        <h1>David Blaine</h1>
+        <form>
+            <input type="email" placeholder="Enter Magic Tricks...">
+            <button type="submit" class="button_1">Search</button>
+        </form>
+    </div>
+</section>
+
+<section id = "main">
+    <div class="container">
+        <h1 id="contacts">Contact</h1>
+        <hr style="height:2px; border:none; color: #e8491d; background-color: #e8491d; margin-top: 0px; margin-bottom: 0px;"/>
+        <aside id="sidepic">
+            <figure>
+                <img src="./imgs/davidblaine.jpg"  width="400" height="400">
+            </figure>
+        </aside>
+        <article id="texto-info">
+            <div class="dark">
+                <p>David Blaine</p>
+                <p>Professional Magician</p>
+                <p>United States Of America</p>
+                <p>Years active: 1997 - Present</p>
+                <p>Telephone: (443)111-1111</p>
+                <p>Email: davidblaine@gmail.com</p>
+                <p>Stunts and Specials:</p>
+                <p>-> Buried Alive</p>
+                <p>-> Catch a bullet with your mouth</p>
+                <p>-> Frozen in Time</p>
+                <p>-> Vertigo</p>
+                <p></p>
+            </div>
+        </article>
+    </div>
+</section>
+
+
+<footer>
+    <p>Theory182 Design, Copyright &copy; 2017</p>
+</footer>
+
+</body>
+</html>

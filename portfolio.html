@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/styling_portfolio.css">
+</head>
+<body>
+<header>
+
+    <a id="menu_icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="white"/>
+        </svg>
+    </a>
+
+    <div id="title">
+        <h1>Theory<span class="highlight">182</span></h1>
+    </div>
+
+    <div id="drawer">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li class="current"><a>Porfolio</a>
+                    <ul>
+                        <li><a>Tricks</a></li>
+                        <li><a>Cards</a></li>
+                        <li><a>Magicians</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+    let menu_icon = document.querySelector('#menu_icon');
+    let container = document.querySelector("body");
+    let drawer = document.querySelector('#drawer');
+
+    menu_icon.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+    });
+    container.addEventListener('click', function() {
+        drawer.classList.remove('open');
+    });
+
+</script>
+
+<section id = "bar">
+    <div class="container">
+        <h1>David Blaine</h1>
+        <form>
+            <input type="email" placeholder="Enter Magic Tricks...">
+            <button type="submit" class="button_1">Search</button>
+        </form>
+    </div>
+</section>
+
+
+<section class="magic_tricks" id="id1">
+    <div class="container">
+        <h2>Magic Tricks</h2>
+        <hr style="height:2px; border:none; color: #e8491d; background-color: #e8491d; margin-top: 0px; margin-bottom: 0px;"/>
+        <figure>
+            <img src="./imgs/tarantula.jpg" width="200" height="200">
+            <figcaption>
+                <h3>Tarantula 2.0</h3>
+                <p>Slowly - just like real magic - the object begins to levitate</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="./imgs/regeneration.jpg" width="200" height="200">
+            <figcaption>
+                <h3>Regeneration</h3>
+                <p>A signed, selected card is visibly, audibly TORN and completely restored - in the spectator's OWN hands.</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="./imgs/counterfeit.jpg" width="200" height="200">
+            <figcaption>
+                <h3>Counterfeit</h3>
+                <p>Tear a card into four pieces - then visually restore it, piece by piece, right in front of your spectator's eyes.</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="./imgs/thread.jpg" width="200" height="200">
+            <figcaption>
+                <h3>Aberdeen Thread</h3>
+                <p>The most fair, clean, and simple torn and restored thread routine ever devised.</p>
+            </figcaption>
+        </figure>
+    </div>
+</section>
+
+<section class="magic_tricks" id="id2">
+    <div class="container">
+        <h2>Cards</h2>
+        <hr style="height:2px; border:none; color: #e8491d; background-color: #e8491d; margin-top: 0px; margin-bottom: 0px;"/>
+        <figure>
+            <img src="./imgs/redmonarchs.jpg" width="200" height="200">
+            <figcaption>
+                <h3>Red Monarchs</h3>
+                <p>Red Monarchs are the perfect stocking stuffer for design aficionados, poker players, and card-collectors alike.</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="./imgs/citizen.jpg" width="200" height="200">
+            <figcaption>
+                <h3>Citizens</h3>
+                <p>Citizens are the most intricate, breathtaking playing cards we’ve ever produced. Illustrated in America by Kevin Cantrell, every aspect was handcrafted with relentless, unrivaled attention to detail.</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="./imgs/nhp.jpg" width="200" height="200">
+            <figcaption>
+                <h3>NHP</h3>
+                <p>NPH Playing Cards are elegant, intricate, and visually stunning. Every aspect was handcrafted with relentless, unrivaled attention to detail.</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="./imgs/national.jpg" width="200" height="200">
+            <figcaption>
+                <h3>National</h3>
+                <p>National Playing Cards were inspired by mystery and the pursuit of power. Each tuck case is embossed and detailed with striking gold and black foil, inside and out.</p>
+            </figcaption>
+        </figure>
+    </div>
+</section>
+
+<section class="magic_tricks" id="id3">
+    <div class="container">
+        <h2>Magicians</h2>
+        <hr style="height:2px; border:none; color: #e8491d; background-color: #e8491d; margin-top: 0px; margin-bottom: 0px;"/>
+        <figure>
+            <img src="./imgs/penn_teller.jpg" width="200" height="200">
+            <figcaption>
+                <h3>Penn and Teller</h3>
+                <p>All magic tricks from Penn and Teller</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="./imgs/david_c.jpg" width="200" height="200">
+            <figcaption>
+                <h3>David Copperfield</h3>
+                <p>All magic tricks from David Copperfield</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="./imgs/luis_matos.jpg" width="200" height="200">
+            <figcaption>
+                <h3>Luís de Matos</h3>
+                <p>All magic tricks from Luís de Matos</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="./imgs/dynamo.jpg" width="200" height="200">
+            <figcaption>
+                <h3>Dynamo</h3>
+                <p>All magic tricks from Dynamo</p>
+            </figcaption>
+        </figure>
+    </div>
+</section>
+
+
+
+<footer>
+    <p>Theory182 Design, Copyright &copy; 2017</p>
+</footer>
+
+</body>
+</html>
